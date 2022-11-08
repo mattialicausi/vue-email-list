@@ -13,7 +13,10 @@
 </head>
 <body>
     <div id="app">
-        
+        <ul id="contenitore-email">
+            <li class="email" v-for="(el, index) in listaEmail">{{listaEmail[index]}}</li>
+        </ul>
+        <button @click="callApi">Genera Email</button>
     </div>
 </body>
 </html>
