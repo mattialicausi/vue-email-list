@@ -13,10 +13,29 @@
 </head>
 <body>
     <div id="app">
-        <ul id="contenitore-email">
-            <li class="email" v-if="listaEmail.length === 10" v-for="(el, index) in listaEmail">{{listaEmail[index]}}</li>
-        </ul>
-        <button @click="callApi">Genera Email</button>
+        <header>
+                <h1 class="d-flex align-items-center justify-content-center h-100">Vue Email List</h1>
+        </header>
+        <main>
+                <!-- BUTTON PER AVVIARE FUNZIONE -->
+
+            <div class="row d-flex align-items-center justify-content-center pt-3">
+                <div class="rounded-pill btn-genera" @click="callApi">Genera Email</div>
+            </div>
+
+                <!-- EMAIL CICLATE -->
+                
+            <ul id="contenitore-email" class="row">
+                <li class="email col-3" v-if="listaEmail.length === 10" v-for="(el, index) in listaEmail">{{listaEmail[index]}}</li>
+            </ul>
+        </main>
+
+        <footer>
+            <div class="d-flex align-items-center h-100">
+                Made By Mattia Li Causi
+            </div>
+        </footer>
+
     </div>
 </body>
 </html>

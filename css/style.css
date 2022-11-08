@@ -1,1 +1,58 @@
-/* GENERAL */
+/* PALETTE COLORI */
+:root{
+    --verdeAcqua: #7DE5ED;
+    --lightblue: #81C6E8;
+    --azzurro: #5DA7DB;
+    --viola: #5837D0;
+}
+
+/* MODIFICHE GENERALI */
+body{
+    color: white;
+}
+
+header{
+    height: 70px;
+    background-color: var(--lightblue);
+}
+
+main{
+    height: calc(100vh - 130px);
+    background-color: var(--verdeAcqua);
+}
+
+footer{
+    height: 60px;
+    background-color: var(--lightblue);
+}
+
+/* MAIN CONTENT */
+.btn-genera{
+    border: 1px solid white;
+    width: max-content;
+    padding: 10px;
+    background-color: var(--azzurro);
+}
+
+.btn-genera:hover{
+    cursor: pointer;
+}
+
+#contenitore-email{
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.email{
+    border: 1px solid white;
+    background-color: var(--lightblue);
+    padding: 10px;
+    list-style: none;
+    margin: auto;
+}
+
+/* FOOTER */
+footer div{
+    padding-left: 50px;
+}
+
