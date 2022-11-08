@@ -14,7 +14,7 @@
 <body>
     <div id="app">
         <ul id="contenitore-email">
-            <li class="email" v-for="(el, index) in listaEmail">{{listaEmail[index]}}</li>
+            <li class="email" v-if="listaEmail.length === 10" v-for="(el, index) in listaEmail">{{listaEmail[index]}}</li>
         </ul>
         <button @click="callApi">Genera Email</button>
     </div>
